@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- Glidejs Carousal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css">
+
+    <!-- Animate On Scroll -->   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Fariha's Phone Shop</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="navigation fix-nav">
+            <div class="container">
+
+                <nav class="nav">
+                    <div class="nav-hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="nav-logo">
+                        <a href="#">PHONE</a>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="menu-cross">
+                            <span class="nav-category">PHONE</span>
+                            <a href="#" class="close"><i class="fa fa-times"></i></a>
+                        </div>
+                        <ul class="menu-list">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#category">Category</a></li>
+                            <li><a href="#news">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-icons">
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span id="cart-total">0</span>
+                        </a>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+
+
+        <!-- Hero area -->
+        <div class="hero">
+
+            <div class="glide" id= "glide-1">
+
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="hero-center">
+                            <div class="hero-left">
+                                <span>New Inspiration 2020</span>
+                                <h1>PHONES MADE FOR YOU!</h1>
+                                <p>Trending from mobile and headphone style collection</p>
+                                <a href="#"><button class="hero-btn">SHOP NOW</button></a>
+                            </div>
+                            <div class="hero-right">
+                                <img src="./img/banner_01.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="hero-center">
+                            <div class="hero-left">
+                                <span>New Inspiration 2020</span>
+                                <h1>CELL PHONE TOP DEALS!</h1>
+                                <p>Check out the latest deals on cell phones</p>
+                                <a href="#"><button class="hero-btn">SHOP NOW</button></a>
+                            </div>
+                            <div class="hero-right">
+                                <img src="./img/banner_02.png" alt="">
+                            </div>
+                        </div>
+                    </li>                   
+                  </ul>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!--    END HEADER -->
+
+    <!-- Main Section -->
+    <main id="main">
+        <div class="container">
+
+            <!-- Collection -->
+            <section id="collection" class="section collection">
+
+                <div class="collection-container" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="collection-box">
+                        <div class="img-container">
+                            <img class="c2" src="./img/collection_02.png" alt="product">
+                        </div>
+                        <div class="collection-content">
+                            <div class="collection-info">
+                                <span>New Colors Introduced</span>
+                                <h1>HEADPHONES</h1>
+                                <a href="#shop">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-box">
+                        <div class="img-container">
+                            <img class="c1" src="./img/collection_01.png" alt="">
+                        </div>
+                        <div class="collection-content">
+                            <div class="collection-info">
+                                <span>Phone Device Presets</span>
+                                <h1>SMARTPHONES</h1>
+                                <a href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Products -->
+            <section class="section latestProducts" id="latest">
+                <div class="title-container">
+                    <div class="section-title active" data-id="Latest Products">
+                        <span class="dot"></span>
+                        <h1 class="heading">Latest Products</h1>
+                    </div>
+                </div>  
+                
+                <div class="container" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="glide" id="glide-2">
+                        <div class="glide__track" data-glide-el="track">
+
+                          <ul class="glide__slides latest-center">
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/iphone6.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Apple iPhone 11</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$750</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/samsung5.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Sumsung Galaxy</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$900</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/headphone4.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Sony WH-CH510</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$600</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/samsung3.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Samsung Galaxy</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$850</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/iphone2.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Apple iPhone 11</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$450</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/headphone2.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Sony WH-CH510</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$300</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/samsung1.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Samsung Galaxy</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$300</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/headphone1.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Sony WH-CH510</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$250</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="img/iphone1.jpeg" alt="product">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3>Apple iPhone XR</h3>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <h4>$550</h4>
+                                        </div>
+                                        <a href="#"><button type="submit" class="product-btn">Add To Cart</button></a>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-tip="Quick View" sata-place="left">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Wishlist" sata-place="left">
+                                                <i class="far fa-heart"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-tip="Add To Compare" sata-place="left">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <i class="fas fa-arrow-left"></i>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Category -->
+            <section class="category-section" id="category">
+                <div class="tab-list">
+                    <div class="title-container tabs">
+
+                        <div class="section-titles category-title">
+                            <div class="section-title filter-btn active" data-id="All Products">
+                                <span class="dot"></span>
+                                <h1 class="heading">All Products</h1>
+                            </div>
+                        </div>  
+    
+                        <div class="section-titles">
+                            <div class="section-title filter-btn" data-id="Trending Products">
+                                <span class="dot"></span>
+                                <h1 class="heading">Trending Products</h1>
+                            </div>
+                        </div>
+    
+                        <div class="section-titles">
+                            <div class="section-title filter-btn" data-id="Special Products">
+                                <span class="dot"></span>
+                                <h1 class="heading">Special Products</h1>
+                            </div>
+                        </div>
+    
+                        <div class="section-titles">
+                            <div class="section-title filter-btn" data-id="Featured Products">
+                                <span class="dot"></span>
+                                <h1 class="heading">Featured Products</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="category-container" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="category-center">
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Facility section -->
+        <section class="facility-section" id="facility">
+            <div class="container">
+                <div class="facility-container" data-aos="fade-up" data-aos-duration="1200">
+                    
+                    <div class="facility-box">
+                        <div class="facility-img">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <p>FREE SHIPPING WORLD WIDE</p>
+                    </div>
+    
+                    <div class="facility-box">
+                        <div class="facility-img">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <p>100% MONEY BACK GUARANTEE</p>
+                    </div>
+    
+                    <div class="facility-box">
+                        <div class="facility-img">
+                            <i class="far fa-credit-card"></i>
+                        </div>
+                        <p>MANY PAYMENT GATWAYS</p>
+                    </div>
+    
+                    <div class="facility-box">
+                        <div class="facility-img">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <p>24/7 ONLINE SUPPORT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testiminoal -->
+        <section class="testimonial" id="testimonial">
+            <div class="container">
+                <div class="testimonial-container">
+                    <div class="glide" id="glide-4">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+
+                            <li class="glide__slide">
+                              <div class="testimonial-box">
+                                <div class="client-image">
+                                  <img src="./img/profile.JPG" alt="profile">
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing
+                                  elit. Recusandae fuga hic nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.</p>
+                                <div class="client-info">
+                                  <h3>John Smith</h3>
+                                  <span>Founder at Apple</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="glide__slide">
+                              <div class="testimonial-box">
+                                <div class="client-image">
+                                  <img src="./img/profile.JPG" alt="profile">
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                                  quibusdam consequatur
+                                  eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic
+                                  nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.adipisicing elit. Recusandae fuga hic
+                                  nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.</p>
+                                <div class="client-info">
+                                  <h3>John Smith</h3>
+                                  <span>Founder at Apple</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="glide__slide">
+                              <div class="testimonial-box">
+                                <div class="client-image">
+                                  <img src="./img/profile.JPG" alt="profile">
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                                  quibusdam consequatur
+                                  eligendi unde officia ex quae.ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic
+                                  nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.adipisicing elit. Recusandae fuga hic
+                                  nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.</p>
+                                <div class="client-info">
+                                  <h3>John Smith</h3>
+                                  <span>Founder at Apple</span>
+                                </div>
+                              </div>
+              
+                            </li>
+                            <li class="glide__slide">
+                              <div class="testimonial-box">
+                                <div class="client-image">
+                                  <img src="./img/profile.JPG" alt="">
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga hic nesciunt tempore
+                                  quibusdam consequatur
+                                  eligendi unde officia ex quae.adipisicing elit. Recusandae fuga hic
+                                  nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.
+                                  hic
+                                  nesciunt tempore
+                                  quibusdam consequatur eligendi unde officia ex quae.</p>
+                                <div class="client-info">
+                                  <h3>John Smith</h3>
+                                  <span>Founder at Apple</span>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+              
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                          <button class="glide__bullet" data-glide-dir="=0"></button>
+                          <button class="glide__bullet" data-glide-dir="=1"></button>
+                          <button class="glide__bullet" data-glide-dir="=2"></button>
+                          <button class="glide__bullet" data-glide-dir="=3"></button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- News Section -->
+        <section class="news" id="news">
+            <div class="container">
+                <div class="title-container">
+                    <div class="section-title active" data-id="Phone News">
+                        <span class="dot"></span>
+                        <h1 class="heading">Phone News</h1>
+                    </div>
+                </div>  
+
+                <div class="news-container">
+                    <div class="glide" id="glide-5">
+                        <div class="glide__track" data-glide-el="track">
+                          <ul class="glide__slides">
+                            <li class="glide__slide">
+                              <div class="news-card">
+                                <div class="card-header">
+                                  <img src="./img/news1.jpg" alt="">
+                                </div>
+                                <div class="card-footer">
+                                  <h3>Styling White Shirts After A Cool Day</h3>
+                                  <span>By Admin</span>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                                    provident rem sed minus natus unde vel modi!</p>
+                                  <a href="#"><button>Read More</button></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="glide__slide">
+                              <div class="news-card">
+                                <div class="card__header">
+                                  <img src="./img/news2.jpg" alt="">
+                                </div>
+                                <div class="card-footer">
+                                  <h3>Styling White Shirts After A Cool Day</h3>
+                                  <span>By Admin</span>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                                    provident rem sed minus natus unde vel modi!</p>
+                                  <a href="#"><button>Read More</button></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="glide__slide">
+                              <div class="news-card">
+                                <div class="card-header">
+                                  <img src="./img/news3.jpg" alt="">
+                                </div>
+                                <div class="card-footer">
+                                  <h3>Styling White Shirts After A Cool Day</h3>
+                                  <span>By Admin</span>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                                    provident rem sed minus natus unde vel modi!</p>
+                                  <a href="#"><button>Read More</button></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="glide__slide">
+                              <div class="news-card">
+                                <div class="card-header">
+                                  <img src="./img/news4.jpg" alt="">
+                                </div>
+                                <div class="card-footer">
+                                  <h3>Styling White Shirts After A Cool Day</h3>
+                                  <span>By Admin</span>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                                    provident rem sed minus natus unde vel modi!</p>
+                                  <a href="#"><button>Read More</button></a>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="glide__slide">
+                              <div class="news-card">
+                                <div class="card-header">
+                                  <img src="./img/news5.jpg" alt="">
+                                </div>
+                                <div class="card-footer">
+                                  <h3>Styling White Shirts After A Cool Day</h3>
+                                  <span>By Admin</span>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium, numquam non
+                                    provident rem sed minus natus unde vel modi!</p>
+                                  <a href="#"><button>Read More</button></a>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NewsLetter -->
+        <section class="newsletter" id="contact">
+            <div class="container">
+                <div class="newslatter-content">
+                    <div class="newsletter-data">
+                        <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                        <p>A short sentence describing what someone will receive by subscribing</p>
+                    </div>
+                    <form action="#">
+                        <input type="email" placeholder="Enter your email address" class="newslatter-email">
+                        <a href="#" class="newsletter-link">Subscribe</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- End Main -->
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-top">
+
+                <div class="footer-widget">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affiliate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order History</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Returns</a>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>CONTACT US</h3>
+                    <div>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        Central Park, USA
+                    </div>
+                    <div>
+                        <span><i class="fas fa-envelope"></i></span>
+                        abc@gmail.com
+                    </div>
+                    <div>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        (513)-111-1111
+                    </div>
+                    <div>
+                        <span><i class="far fa-paper-plane"></i></span>
+                        Central Park, USA
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- PopUp -->
+  <!-- <div class="popup hide__popup">
+    <div class="popup__content">
+      <div class="popup__close">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+      <div class="popup__left">
+        <div class="popup-img__container">
+          <img class="popup__img" src="./images/popup.jpg" alt="popup">
+        </div>
+      </div>
+      <div class="popup__right">
+        <div class="right__content">
+          <h1>Get Discount <span>30%</span> Off</h1>
+          <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!
+          </p>
+          <form action="#">
+            <input type="email" placeholder="Enter your email..." class="popup__form">
+            <a href="#">Subscribe</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Go To -->
+
+  <!-- <a href="#header" class="goto-top scroll-link">
+    <svg>
+      <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+    </svg>
+  </a> -->
+
+
+
+    <!-- Glidejs carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
